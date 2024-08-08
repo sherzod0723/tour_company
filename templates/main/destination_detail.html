@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block body %}
+
+    <!-- Page Header Start !-->
+<div class="page-breadcrumb-area page-bg" style="background-image: url('images/breadcrumb/destination-details.jpg')">        <!-- <div class="page-overlay"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <div class="page-heading">
+                            <h3 class="page-title">{{ destination.city }}</h3>
+                        </div>
+                        <div class="breadcrumb-list">
+                            <ul>
+                                <li><a href="{% url 'main_home_view' %}">{% trans 'Home' %}</a></li>
+                                <li class="active"><a href="#">{% trans 'Destination detail' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End !-->
+
+    <div class="blog-area destination-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 blog-details-wrapper">
+                    <!-- Post Details Start -->
+                    <article class="single-post-item mb-0">
+                        <h3 class="post-title">
+                            <a href="blog-details.html">{{ destination.country }}</a>
+                        </h3>
+                        
+                        <div class="post-thumbnail">
+                            <a href="{% url 'destination_detail' destination.id %}" class="image-inner">
+                                <img src="{{ destination.photo.url }}" alt="Location Image" style="width: 851px; height: 404px;">
+                            </a>
+                        </div>
+                        <div class="post-content-wrapper">
+                            <div class="post-content">
+                                <h4>{% trans 'About' %} {{ destination.country }}</h4>
+                                <p>{{ destination.about }}</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post Details End -->
+                </div>
+                <!-- Blog Sidebar Start -->
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div class="sidebar">
+                        <div class="widget widget_search">
+                            <!-- <div class="widget-title-box">
+                                <h4 class="wp-block-heading">Search</h4>
+                            </div> -->
+                            <form class="search-form" action="#" method="get">
+                                <input type="text" placeholder="Search.."/>
+                            </form>
+                            <button type="submit"><i class="icon-search"></i></button>
+                        </div>
+                        <div class="widget widget_latest_post">
+                        <div class="widget widget_categories">
+                            <div class="widget-title-box">
+                                <h4 class="wp-block-heading">{% trans 'Categories' %}</h4>
+                            </div>
+                            <ul>
+                                <li><a href="{% url 'tours' %}">{% trans 'Adventure' %}</a>(<span>1</span>)</li>
+                                <li><a href="{% url 'tours' %}">{% trans 'Hiking' %}</a>(<span>3</span>)</li>
+                                <li><a href="{% url 'tours' %}">{% trans 'Culture' %}</a>(<span>2</span>)</li>
+                                <li><a href="{% url 'tours' %}">{% trans 'Uncategorized' %}</a>(<span>4</span>)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Sidebar Start -->
+            </div>
+        </div>
+    </div>
+    <!--- Blog End !-->
+{% endblock body %}

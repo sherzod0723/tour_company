@@ -1,0 +1,179 @@
+{% load i18n %}
+{% load static %}
+
+
+<style>
+    /* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ecf0f3;
+}
+
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
+}
+
+.logo img {
+    width: 13em;
+    height: 3em;
+    /*object-fit: cover;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 3px #5f5f5f,
+        0px 0px 0px 5px #ecf0f3,
+        8px 8px 15px #a7aaa7,
+        -8px -8px 15px #fff;*/
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+</style>
+
+<link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.min.css' %}" media="all">
+<link rel="stylesheet" type="text/css" href="{% static 'vendors/jquery-ui/jquery-ui.min.css' %}">
+
+<div class="wrapper">
+    <div class="logo p-5 rounded-pill" style="width: 290px; height: 150px; text-align: center; background-color: #99CCFF; display: flex; justify-content: center; align-items: center;">
+        <a href="{% url 'main_home_view' %}">
+            <img src="{% static 'images/logo/Frame.svg' %}" alt="Company LOGO" style="width: 250px; height: auto;">
+        </a>
+    </div>
+    <form class="p-3 mt-3 reg_form" method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+        <input type="hidden" class="forgot_password_input" name="forgot_password" value="0">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input type="email" name="email" class="email" id="userName" placeholder="{% trans 'Email' %}" required>
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input type="password" name="password" class="password1" id="pwd" placeholder="{% trans 'Password' %}" required>
+        </div>
+        <p class="text-danger d-none email_field_error">{% trans "Fill in Email field" %}</p>
+        <p class="text-danger d-none all_fields_error">{% trans "Fill in all fields" %}</p>
+        <p class="text-danger d-none login_error">{% trans "Login or Password is incorrect" %}</p>
+        <button type="button" class="btn mt-3 reg_btn"  style="background-color: #99CCFF;">{% trans "Login" %}</button>
+    </form>
+    <div class="text-center fs-10">
+        <a href="#" class="forgot_pass_btn">{% trans "Forget password?" %}</a>{% trans "  or  " %} <a href="{% url 'register' %}">{% trans "Register" %}</a>
+    </div>
+</div>
+
+
+<script src="{% static 'vendors/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'vendors/jquery/jquery.js' %}"></script>
+<script>
+    $(document).ready(function(){
+        let login_error = "{{login_error}}";
+        let email_confirmed = "{{email_confirmed}}";
+        let link_sent = "{{link_sent}}";
+
+        $(".forgot_pass_btn").click(function(){
+            let email = $(".email").val();
+            if(email == "") {
+                $(".email_field_error").removeClass("d-none");
+            } else {
+                $(".email_field_error").addClass("d-none");
+                $(".forgot_password_input").val("1")
+                $(".reg_form").submit();
+            }
+        })
+
+        $(".reg_btn").click(function(){
+            let email = $(".email").val();
+            let password1 = $(".password1").val();
+            if(email == "" || password1 == "") {
+                $(".all_fields_error").removeClass("d-none");
+            } else {
+                $(".all_fields_error").addClass("d-none");
+                $(".reg_form").submit();
+            }
+        })
+        if(login_error !== "") {
+            $(".login_error").removeClass('d-none')
+        } else {
+            $(".login_error").addClass('d-none')
+        }
+        if(email_confirmed !== "") {
+            alert("Ваша учетная запись активирована, вы можете войти, используя свой адрес электронной почты и пароль.")
+        }
+        if(link_sent !== "") {
+            alert("Мы отправили ссылку на Вашу электронную почту")
+        }
+    })
+</script>

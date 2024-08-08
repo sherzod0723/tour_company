@@ -1,0 +1,7 @@
+{% autoescape off %}
+
+Здравствуйте {{user}}, Добро пожаловать в нашу компанию Tour Brand. Пожалуйста, нажмите ссылку ниже, чтобы активировать свою учетную запись. 
+
+http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape %}

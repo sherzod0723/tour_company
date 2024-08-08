@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block body %}
+    <!-- Page Header Start !-->
+<div class="page-breadcrumb-area page-bg" style="background-image: url('images/breadcrumb/image-1.jpg')">        <!-- <div class="page-overlay"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <div class="page-heading">
+                            <h3 class="page-title">{% trans 'Blog detail' %}</h3>
+                        </div>
+                        <div class="breadcrumb-list">
+                            <ul>
+                                <li><a href="{% url 'main_home_view' %}">{% trans 'Home' %}</a></li>
+                                <li class="active"><a href="#">{% trans 'Blog detail' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End !-->
+    <!-- Blog Details Area Start -->
+    <div class="blog-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-7 blog-details-wrapper">
+                  <!-- Post Details Start -->
+                  <article class="single-post-item">
+                      <div class="post-thumbnail">
+                          <a href="#">
+                              <img src="{{ post.photo.url }}" alt="Blog Image" />
+                          </a>
+                      </div>
+                      <div class="post-content-wrapper">
+                          <div class="post-meta style-2">
+                              <div class="post-meta-inner">
+                                  <a href="#" class="user-info">
+                                      <div class="image-wrapper">
+                                          <img src="{% static 'images/latest-post/meta-user-img-1.png' %}" alt="Meta User">
+                                      </div>
+                                      <p class="name">By Admin</p>
+                                  </a>
+                                  <div class="date-info">
+                                      <p class="date">{{ post.created_at|date:"l, j F Y" }}</p>
+                                  </div>
+                                  <div class="time-info">
+                                      <p class="time">{{ post.read_time }} min read</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="post-card-divider"></div>
+                          <h3 class="post-title">{{ post.title }}</h3>
+                          <div class="post-content">
+                              <p>{{ post.body }}</p>
+                          </div>
+                      </div>
+                  </article>
+                  <!-- Post Details End -->
+                </div>
+                <!-- Blog Sidebar Start -->
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <div class="sidebar">
+                        <div class="widget widget_search">
+                            <!-- <div class="widget-title-box">
+                                <h4 class="wp-block-heading">Search</h4>
+                            </div> -->
+                            <form class="search-form" action="#" method="get">
+                                <input type="text" placeholder="Search.."/>
+                            </form>
+                            <button type="submit"><i class="icon-search"></i></button>
+                        </div>
+                        {% comment %} <div class="widget widget_categories">
+                            <div class="widget-title-box">
+                                <h4 class="wp-block-heading">{% trans 'Categories' %}</h4>
+                            </div>
+                            <ul>
+                                <li><a href="{% url 'tours' %}">{% trans 'Adventure' %}</a>(<span>1</span>)</li>
+                                <li><a href="{% url 'tours' %}">{% trans 'Hiking' %}</a>(<span>3</span>)</li>
+                                <li><a href="{% url 'tours' %}">{% trans 'Culture' %}</a>(<span>2</span>)</li>
+                                <li><a href="{% url 'tours' %}">{% trans 'Uncategorized' %}</a>(<span>4</span>)</li>
+                            </ul>
+                        </div> {% endcomment %}
+                        {% comment %} <div class="widget widget_tag_cloud">
+                            <div class="widget-title-box">
+                                <h4 class="wp-block-heading">Tags</h4>
+                            </div>
+                            <div class="tagcloud">
+                                <a href="{% url 'post_post_list' %}">{% trans 'Travel' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Adventure' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Tour' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Mountain' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Family' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'People' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Sports' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Hiking' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Swimming' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'River' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Explore' %}</a>
+                                <a href="{% url 'post_post_list' %}">{% trans 'Autumn' %}</a>
+                            </div>
+                        </div> {% endcomment %}
+                        <div class="widget widget_social_profile">
+                            <div class="widget-title-box">
+                                <h4 class="wp-block-heading">{% trans 'Social' %}</h4>
+                            </div>
+                            <div class="social-profile">
+                                <a href="https://t.me/MarokandTravel"><i class="fab fa-telegram"></i></a>
+                                <a href="https://www.instagram.com/marokandtravel.uz/"><i class="fab fa-instagram"></i></a>
+                                <a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a class="instagram" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Sidebar Start -->
+            </div>
+        </div>
+    </div>
+    <!--- Blog Details Area Start End !-->
+
+{% endblock body %}

@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% load static %}
+{% block body %}
+{% load i18n %}
+    <!-- Menu Sidebar Section Start -->
+    <div class="menu-sidebar-area">
+        <div class="menu-sidebar-wrapper">
+            <div class="menu-sidebar-close">
+                <button class="menu-sidebar-close-btn" id="menu_sidebar_close_btn">
+                    <i class="fal fa-times"></i>
+                </button>
+            </div>
+            <div class="menu-sidebar-content">
+                <div class="menu-sidebar-logo">
+                    <a href="{% url 'main_home_view' %}"><img src="{% static 'images/logo/Frame.svg' %}" alt="logo"/></a>
+                </div>
+                <div class="mobile-nav-menu"></div>
+                <div class="menu-sidebar-content">
+                    <div class="menu-sidebar-single-widget">
+                        <h5 class="menu-sidebar-title">Contact Info</h5>
+                        <div class="header-contact-info">
+                            <span><i class="fa-solid fa-location-dot"></i>20, Bordeshi, New York, US</span>
+                            <span><a href="mailto:hello@transico.com"><i class="fa-solid fa-envelope"></i>hello@transico.com</a> </span>
+                            <span><a href="tel:+123-456-7890"><i class="fa-solid fa-phone"></i>+123-456-7890</a></span>
+                        </div>
+                        <div class="social-profile">
+                            <a href="https://t.me/MarokandTravel"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.instagram.com/marokandtravel.uz/"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Menu Sidebar Section Start -->
+    <div class="body-overlay"></div>
+
+    <!-- Page Header Start !-->
+    <div class="page-breadcrumb-area page-bg" style="background-image: url('images/breadcrumb/destination.jpg')">
+        <!-- <div class="page-overlay"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <div class="page-heading">
+                            <h3 class="page-title">{% trans 'Destination' %}</h3>
+                        </div>
+                        <div class="breadcrumb-list">
+                            <ul>
+                                <li><a href="{% url 'main_home_view' %}">{% trans 'Home' %}</a></li>
+                                <li class="active"><a href="#">{% trans 'Destination' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End !-->
+
+<!-- Location Area Start -->
+<div class="destination-page location-area style-4">
+    <div class="container">
+        <div class="section-title justify-content-start text-start">
+            <div class="sec-content">
+                <h2 class="title">{% trans 'Popular Destinations' %}</h2>
+                <img class="bottom-shape" src="{% static 'images/shape/bottom-bar.png' %}" alt="Bottom Shape">
+            </div>
+        </div>
+        <div class="row gy-4">
+            {% for destination in dests %}
+                {% if forloop.counter0 == 0 %}
+                <!--- Single Location Start !-->
+                <div class="col-md-8 wow fadeInUp" data-wow-delay="0s">
+                    <div class="location-card-wrapper">
+                        <div class="location-card style-1">
+                            <div class="image-wrapper">
+                                <a href="{% url 'destination_detail' destination.id %}" class="image-inner">
+                                    <img src="{{ destination.photo.url }}" alt="Location Image" style="width: 851px; height: 404px;">
+                                </a>
+                                <div class="card-location">
+                                    <div class="location-inner">
+                                        <span><i class="fa-regular fa-location-dot"></i></span>
+                                        <span class="address">{{ destination.city }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Single Location End !-->
+                {% elif forloop.counter0 == 6 %}
+                <!--- Single Location Start !-->
+                <div class="col-md-8 wow fadeInUp" data-wow-delay="1.6s">
+                    <div class="location-card-wrapper">
+                        <div class="location-card style-1">
+                            <div class="image-wrapper">
+                                <a href="{% url 'destination_detail' destination.id %}" class="image-inner">
+                                    <img src="{{ destination.photo.url }}" alt="Location Image" style="width: 851px; height: 404px;">
+                                </a>
+                                <div class="card-location">
+                                    <div class="location-inner">
+                                        <span><i class="fa-regular fa-location-dot"></i></span>
+                                        <span class="address">{{ destination.city }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Single Location End !-->
+                {% else %}
+                <!--- Single Location Start !-->
+                <div class="col-md-4 wow fadeInUp" data-wow-delay="{{ forloop.counter|divisibleby:2|yesno:'1.4s,0.4s' }}">
+                    <div class="location-card-wrapper">
+                        <div class="location-card style-1">
+                            <div class="image-wrapper">
+                                <a href="{% url 'destination_detail' destination.id %}" class="image-inner">
+                                    <img src="{{ destination.photo.url }}" alt="Location Image" style="width: 405px; height: 404px;">
+                                </a>
+                                <div class="card-location">
+                                    <div class="location-inner">
+                                        <span><i class="fa-regular fa-location-dot"></i></span>
+                                        <span class="address">{{ destination.city }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--- Single Location End !-->
+                {% endif %}
+            {% empty %}
+                <p>{% trans 'No destinations available.' %}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Location Area End -->
+
+{% endblock body%}

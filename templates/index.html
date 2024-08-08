@@ -1,0 +1,423 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block body %}
+
+    <!-- Banner Section Start !-->
+    <div class="slider-area style-1"  style="background-image: url('images/hero-section/bg-1.jpg')">
+        <img class="banner-shape-1 wow slideInLeft" src="{% static 'images/shape/wave.png' %}" alt="Shape">
+        <img class="banner-shape-2 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms" src="{% static 'images/shape/send-msg.png' %}" alt="Shape">
+        <img class="banner-shape-3 wow slideInDown" src="{% static 'images/shape/sky.png' %}" alt="Shape">
+        <img class="banner-shape-4 wow zoomInUp" src="{% static 'images/shape/dots.png' %}" alt="Shape">
+        <div class="slider-wrapper">
+            <div>
+                <div class="single-slider">
+                    <div class="container h-100 align-self-center">
+                        <div class="content-wrapper">
+                            <div class="row h-100">
+                                <div class="col-md-5 align-self-center order-2 order-md-1">
+                                    <div class="slider-content-wrapper">
+                                        <div class="slider-content">
+                                            <img class="topbar-shape" src="{% static 'images/shape/highlight.png' %}" alt="Shape">
+                                            <span class="slider-short-title">{% trans 'Tour and travels' %}</span>
+                                            <h1 class="slider-title">{% trans 'Lets travel the world with us' %}</h1>
+                                            <img class="bottom-shape" src="{% static 'images/shape/bottom-bar.png' %}" alt="Bottom Shape">
+                                            <p class="slider-short-desc">{% trans 'Enjoy unparalleled adventures and create unforgettable memories while we take care of the details. Join us and embrace a journey that goes beyond the ordinary.' %}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 align-self-center order-1 order-md-2">
+                                    <div class="slider-image">
+                                        <img src="{% static 'images/hero-section/image-1.png' %}" alt="feature image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End !-->
+    
+    <!-- Location Slider Area Start -->
+    <div class="location-slider-area style-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <div class="sec-content">
+                            <img class="topbar-shape-2" src="{% static 'images/shape/three-line-shape.png' %}" alt="Shape">
+                            <span class="short-title">{% trans 'Destination' %}</span>
+                            <h2 class="title">{% trans 'Popular destination' %}</h2>
+                            <img class="bottom-shape" src="{% static 'images/shape/bottom-bar.png' %}" alt="Bottom Shape">
+                        </div>
+                        <div class="location-slider-arrow">
+                            <button type="button" class="location-arrow-btn prev-btn" id="trigger_location_prev"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button type="button" class="location-arrow-btn next-btn" id="trigger_location_next"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="location-slider-wrapper" id="location-slider-wrapper">
+                {% for destination in last_three_dests %}
+                    <!--- Single Location Start !-->
+                    <div class="location-card style-1 wow fadeInUp" data-wow-delay="{% if forloop.first %}0s{% elif forloop.last %}1.2s{% else %}{{ forloop.counter0|divisibleby:2|yesno:"0s,.4s" }}{% endif %}">
+                        <div class="image-wrapper">
+                            <a href="{% url 'destination_detail' destination.id %}" class="image-inner">
+                                <img src="{{ destination.photo.url }}" alt="Location Image" style="width: 390px; height: 430px;">
+                            </a>
+                            <div class="rating">
+                                <div class="ratting-inner">
+                                    <span><i class="fa-solid fa-star"></i></span>   
+                                    <span class="counter">3.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="content-inner">
+                                <h3 class="content-title"><a href="{% url 'destination_detail' destination.id %}">{{ destination.city }}</a></h3>
+                                <a href="{% url 'destination_detail' destination.id %}" class="icon"><i class="icon-up-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Single Location End !-->
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- Location Slider Area End -->
+
+
+    <!-- About Us Area Start -->
+    <div class="about-us-area style-1" style="background-image: url('images/about-us-area/bg-1.png')">
+        <img class="shape-1 wow zoomInDown" src="{% static 'images/shape/dots.png' %}" alt="Shape">
+        <div class="container">
+            <div class="about-us-wrapper">
+                <div class="row">
+                    <div class="col-xl-5 order-xl-1 order-2 wow fadeInLeft" data-wow-delay=".4s">  
+                        <div class="about-us-content-wrapper-1">
+                            <div class="section-title">
+                                <div class="sec-content">
+                                    <span class="short-title">{% trans 'About us' %}</span>
+                                    <h2 class="title">{% trans 'We create journeys for the excited traveler' %}</h2>
+                                    <img class="bottom-shape" src="{% static 'images/shape/bottom-bar.png' %}" alt="Bottom Shape">
+                                </div>
+                            </div>
+                            <div class="info-card style-1">
+                                <div class="icon-wrapper">
+                                    <img src="{% static 'images/icon/folding-map.png' %}" alt="Icon">
+                                </div>
+                                <div class="content">
+                                    <h6 class="title">{% trans 'Best of hotel' %}</h6>
+                                    <p class="desc">{% trans 'Embark on world-class journeys crafted for the discerning traveler, where luxury meets adventure at the finest hotels and destinations across the globe.' %}</p>
+                                </div>
+                            </div>
+                            <div class="info-card style-1">
+                                <div class="icon-wrapper">
+                                    <img src="{% static 'images/icon/ticket.png' %}" alt="Icon">
+                                </div>
+                                <div class="content">
+                                    <h6 class="title">{% trans 'World class travel' %}</h6>
+                                    <p class="desc">{% trans 'Embark on world-class journeys crafted for the discerning traveler, where luxury meets adventure at the finest hotels and destinations across the globe.' %}</p>
+                                </div>
+                            </div>
+                            <div class="meta-wrapper">
+                                <a href="{% url 'main_about' %}" class="theme-btn">{% trans 'Learn more' %}</a>
+                                <div class="meta-user">
+                                    <a href="#" class="image-inner" style="width: 56px; height: 56px;">
+                                        <img src="{% static 'images/icon/user-1.png' %}" alt="User">
+                                    </a>
+                                    <a href="#" class="image-inner" style="width: 56px; height: 56px;">
+                                        <img src="{% static 'images/icon/user-2.png' %}" alt="User">
+                                    </a>
+                                    <a href="#" class="image-inner" style="width: 56px; height: 56px;">
+                                        <img src="{% static 'images/icon/user-3.png' %}" alt="User">
+                                    </a>
+                                    <a href="#" class="image-inner">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                                <div class="counter-wrapper">
+                                    <h6 class="counter-inner"><span class="counter">500</span>+</h6>
+                                    <span class="customers">{% trans 'customers' %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 order-xl-2 order-1 wow fadeInRight" data-wow-delay=".4s">
+                        <div class="about-us-image-wrapper-1">
+                            <img class="bg-shape" src="{% static 'images/about-us-area/image-wrapper-bg-1.png' %}" alt="Shape">
+                            <div class="image-wrapper style-1" style="width: 290px; height: 290px;">
+                                <img src="{% static 'images/about-us-area/img-1.jpg' %}" alt=" Vacation Image">
+                            </div>
+                            <div class="image-wrapper style-2" style="width: 180px; height: 180px;">
+                                <img src="{% static 'images/about-us-area/img-2.jpg' %}" alt=" Vacation Image">
+                            </div>
+                            <div class="image-wrapper style-3" style="width: 350px; height: 350px;">
+                                <img src="{% static 'images/about-us-area/img-3.jpg' %}" alt=" Vacation Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Area Start -->
+    
+    <!-- Location Area Start -->
+    <div class="location-area style-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title  align-content-center justify-content-center text-center">
+                        <div class="sec-content">
+                            <span class="short-title">{% trans 'Popular packages' %}</span>
+                            <h2 class="title">{% trans 'Find popular tours' %}</h2>
+                            <img class="bottom-shape" src="{% static 'images/shape/bottom-bar.png' %}" alt="Bottom Shape">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <!--- Single Location Start !-->
+                {% for tour in last_three_tours %}
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0s">
+                    <div class="location-card style-2">
+                        <div class="image-wrapper">
+                            <div class="image-inner">
+                                <a href="{% url 'tour_tour_detail' tour.id %}">
+                                    <img src="{{ tour.photo.url }}" alt="{{ tour.title }}" style="width: 405px; height: 272px; object-fit: cover;">
+                                </a>
+                            </div>
+                            <div class="rating">
+                                <div class="ratting-inner">
+                                    <span><i class="fa-solid fa-star"></i></span>   
+                                    <span class="counter">3.5</span>
+                                </div>
+                            </div>
+                            <a href="#" class="favourite-icon active"><i class="fa-solid fa-heart"></i></a>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="content-inner">
+                                <span class="price">{{ tour.calc_disc }} so'm</span>
+                                <h3 class="content-title"><a href="{% url 'tour_tour_detail' tour.id %}">{{ tour.title }}</a></h3>
+                                <div class="time-zone">
+                                    <div class="time-zone-inner">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p class="title">{{ tour.country }}</p>
+                                    </div>
+                                    <div class="time-zone-inner">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <p class="title">{{ tour.duration }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!--- Single Location End !-->
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Location Area End -->
+
+    <!-- Why Choose Us Area  Start-->
+    <div class="why-choose-us-area style-1">
+        <img class="shape-1 wow zoomInDown" src="{% static 'images/shape/half-circle-2.png' %}" alt="Shape">
+        <img class="shape-2 wow zoomInUp" src="{% static 'images/shape/dots.png' %}" alt="Shape">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xl-4 col-lg-6 wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="section-title">
+                        <div class="sec-content">
+                            <span class="short-title">{% trans 'Why choose us' %}</span>
+                            <h2 class="title">{% trans 'Get the best travel experience with travello' %}</h2>
+                            <img class="bottom-shape" src="{% static 'images/shape/bottom-bar.png' %}" alt="Bottom Shape">
+                        </div>
+                        <div class="sec-desc">
+                            <p class="desc">{% trans 'Experience the ultimate in travel with Travello, where every journey is tailored to perfection.' %}</p>
+                        </div>
+                        <div class="sec-btn">
+                            <a href="#" class="theme-btn">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 align-self-center wow fadeInDown" data-wow-delay=".6s">
+
+                </div>
+                <div class="col-xl-4 wow fadeInRight" data-wow-delay=".4s">
+                    <div class="info-wrapper">
+                        <div class="info-card style-1">
+                            <div class="icon-wrapper">
+                                <img src="images/icon/folding-map.png" alt="Icon">
+                            </div>
+                            <div class="content">
+                                <h6 class="title">{% trans 'Tour guide' %}</h6>
+                                <p class="desc">{% trans 'Experience unforgettable adventures with our expert tour guides, who bring each destination to life with their knowledge and passion.' %}</p>
+                            </div>
+                        </div>
+                        <div class="info-card style-1">
+                            <div class="icon-wrapper">
+                                <img src="{% static 'images/icon/ticket.png' %}" alt="Icon">
+                            </div>
+                            <div class="content">
+                                <h6 class="title">{% trans 'Friendly price' %}</h6>
+                                <p class="desc">{% trans 'Enjoy exceptional travel experiences with friendly prices that fit your budget, without compromising on quality or comfort.' %}</p>
+                            </div>
+                        </div>
+                        <div class="info-card style-1">
+                            <div class="icon-wrapper">
+                                <img src="{% static 'images/icon/calender.png' %}" alt="Icon">
+                            </div>
+                            <div class="content">
+                                <h6 class="title">{% trans 'Instant booking' %}</h6>
+                                <p class="desc">{% trans 'Secure your dream adventure in just a few clicks with our instant booking feature, making travel planning effortless and immediate.' %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Area  End-->
+
+    <!-- Process Step Area Start  -->
+    <div class="process-step-area style-1">
+        <div class="container">
+            <img class="bg-shape" src="{% static 'images/shape/elements.png' %}" alt="Shape">
+            <div class="section-title justify-content-center text-center">
+                <div class="sec-content">
+                    <span class="short-title">{% trans 'Our process' %}</span>
+                    <h2 class="title">{% trans 'Revolutionising the ways we travel' %}</h2>
+                    <img class="bottom-shape" src="{% static 'images/shape/bottom-bar.png' %}" alt="Bottom Shape">
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0s">
+                    <div class="process-card style-1">
+                        <div class="img-wrapper wow">
+                            <img src="{% static 'images/process-step-area/image-1.png' %}" alt="Shape">
+                        </div>
+                        <div class="content-wrapper">
+                            <h4 class="title">{% trans 'Book & relax' %}</h4>
+                            <p class="desc">{% trans 'Book your dream getaway and relax while we take care of the rest.' %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="process-card style-1">
+                        <div class="img-wrapper">
+                            <img src="{% static 'images/process-step-area/image-2.png' %}" alt="Shape">
+                        </div>
+                        <div class="content-wrapper">
+                            <h4 class="title">{% trans 'Smart checklist' %}</h4>
+                            <p class="desc">{% trans 'Stay organized and on track with our Smart Checklist, designed to streamline your tasks and ensure nothing gets overlooked.' %}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="process-card style-1 ">
+                        <div class="img-wrapper">
+                            <img src="{% static 'images/process-step-area/image-3.png' %}" alt="Shape">
+                        </div>
+                        <div class="content-wrapper">
+                            <h4 class="title">{% trans 'Save more' %}</h4>
+                            <p class="desc">{% trans 'Save more on your next adventure with unbeatable deals that let you explore the world without breaking the bank.' %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process Step Area End  -->
+
+
+    <!-- Testimonial Slider Area Start -->
+    <div class="testimonial-slider-area style-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 wow fadeInLeft">
+                    <div class="testimonial-slider-image-wrapper">
+                        <div class="single-img-wrapper style-1">
+                            <div class="img-inner">
+                                <div class="image" style="width: 300px; height: 300px;">
+                                    <img src="{% static 'images/testimonial/user-1.png' %}" alt="User Image">
+                                </div>
+                                <div class="content">
+                                    <span class="desc"><i class="fa-solid fa-location-dot"></i>{% trans 'Colombia' %}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-img-wrapper style-2">
+                            <div class="img-inner">
+                                <div class="image" style="width: 130px; height: 130px;">
+                                    <img src="{% static 'images/testimonial/user-3.png' %}" alt="User Image">
+                                </div>
+                                <div class="content">
+                                    <span class="desc"><i class="fa-solid fa-location-dot"></i>{% trans 'Russian' %}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-img-wrapper style-3">
+                            <div class="img-inner">
+                                <div class="image" style="width: 200px; height: 200px;">
+                                    <img src="{% static 'images/testimonial/user-2.png' %}" alt="User Image">
+                                </div>
+                                <div class="content style-2">
+                                    <span class="desc"><i class="fa-solid fa-location-dot"></i>{% trans 'Istanbul' %}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight">
+                    <div class="testimonial-content-wrapper">
+                         <div class="section-title">
+                            <div class="sec-content">
+                                <span class="short-title">{% trans 'Testimonial' %}</span>
+                                <h2 class="title">{% trans 'What traveler says' %}</h2>
+                                <img class="bottom-shape" src="{% static 'images/shape/bottom-bar.png' %}" alt="Bottom Shape">
+                            </div>
+                        </div>
+                        <div class="testimonial-slider-wrapper" id="testimonial_one">
+                            <!-- Single Slider Content Start -->
+                            <div>
+                                <div class="testimonial-card style-1">
+                                    <div class="content-wrapper">
+                                        <div class="content">
+                                            <p class="text">{% trans 'Their service is absolutely wonderful and cheaper than the direct or any other booking site, You back to us strait away and no issues at all in the other end.' %}</p>
+                                        </div>
+                                        <div class="user-rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <!-- Single Slider Content End -->
+                        </div>  
+                        <div class="testimonial-user-slider">
+                            
+                            </div>
+
+                            <!-- Single User Wrapper Start -->
+
+                            <!-- Single User Wrapper End -->
+                        </div>           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial Slider Area End -->
+
+    {% endblock body %}

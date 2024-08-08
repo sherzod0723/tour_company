@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block css %}
+  
+{% endblock css %}
+{% block body %}
+  
+         <!-- ***site header html end*** -->
+         <main id="content" class="site-main">
+            <section class="inner-page-wrap">
+               <!-- ***Inner Banner html start form here*** -->
+               <div class="inner-banner-wrap">
+                  <div class="inner-baner-container" style="background-image: url(assets/images/img7.jpg);">
+                     <div class="container">
+                        <div class="inner-banner-content">
+                           <h1 class="page-title">{% trans "Package Offer" %}</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ***Inner Banner html end here*** -->
+               <!-- ***offer package section html start form here*** -->
+               <div class="offer-package-wrap">
+                  <div class="container">
+                     <div class="row gx-5">
+                        {% for spec_tour in special_tours %}
+                        <div class="col-md-6">
+                           <article class="offer-item" 
+                           {% if spec_tour.get_first_img %} 
+                                    style="background-image: url({{spec_tour.get_first_img}});"
+                                    {% else %}
+                                    style="background-image: url({% static 'images/img8.jpg' %});"
+                                 {% endif %} >
+                              <div class="offer-badge">
+                                 <span>{{spec_tour.discount}}%</span> {% trans "off" %}
+                              </div>
+                              <div class="offer-content">
+                                 <div class="package-meta">
+                                    <ul>
+                                       <li>
+                                          <i class="fas fa-clock"></i>
+                                          {{spec_tour.duration}}
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-user-friends"></i>
+                                          {{spec_tour.person_count}}
+                                       </li>
+                                       <li>
+                                          <i class="fas fa-map-marker-alt"></i>
+                                          {{spec_tour.country}}
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <h3>
+                                    <a href="{% url 'tour_tour_detail' spec_tour.id %}">{{spec_tour.title}}</a>
+                                 </h3>
+                                 <p>
+                                    
+                                 </p>
+                                 <div class="price-list">
+                                    {% trans "price" %}: 
+                                    <del>${{spec_tour.price}} </del>
+                                    <ins>${{spec_tour.calc_disc}}</ins>
+                                 </div>
+                                 <a href="#" class="round-btn">{% trans "Add to cart" %}</a>
+                              </div>
+                           </article>
+                        </div>
+                        {% endfor %}
+                     </div>
+                  </div>
+               </div>
+               <!-- ***offer package section html start form here*** -->
+               <!-- ***callback section html start form here*** -->
+               <div class="bg-img-fullcallback" style="background-image: url(assets/images/img16.jpg);">
+                  <div class="overlay"></div>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8 offset-lg-2 text-center">
+                           <div class="callback-content">
+                              <div class="video-button">
+                                 <a  id="video-container" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=2OYar8OHEOU">
+                                    <i class="fas fa-play"></i>
+                                 </a>
+                              </div>
+                              <h2 class="section-title">{% trans "ARE YOU READY TO TRAVEL? REMEMBER US " %}!!</h2>
+                              
+                              <div class="callback-btn">
+                                 <a href="#" class="round-btn">{% trans "View Packages" %}</a>
+                                 <a href="#" class="outline-btn outline-btn-white">{% trans "Learn More" %}</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- ***callback section html end here*** -->
+            </section>
+         </main>
+{% endblock body %}
+{% block js %}
+  
+{% endblock js %}

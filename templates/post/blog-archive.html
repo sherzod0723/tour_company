@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block body %}
+
+    <!-- Page Header Start -->
+    <div class="page-breadcrumb-area page-bg" style="background-image: url('images/breadcrumb/image-1.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <div class="page-heading">
+                            <h3 class="page-title">Blog</h3>
+                        </div>
+                        <div class="breadcrumb-list">
+                            <ul>
+                                <li><a href="{% url 'main_home_view' %}">Home</a></li>
+                                <li class="active"><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Blog Start -->
+    <div class="blog-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 blog-post">
+                    {% for post in page_obj %}
+                    <!-- Single Blog Start -->
+                    <article class="single-post-item format-image">
+                        <div class="post-thumbnail" style="width: 460px; height: 310px; overflow: hidden; position: relative;">
+                            <a href="{% url 'detail_post' post.id %}">
+                                <img src="{{ post.photo.url }}" alt="Blog Image" style="width: 100%; height: 100%;"/>
+                            </a>
+                        </div>
+                        <div class="post-content-wrapper">
+                            <div class="post-meta style-2">
+                                <div class="post-meta-inner">                                
+                                    <div class="date-info"><p class="date">{{ post.created_at|date:"l, j F Y" }}</p></div>
+                                </div>
+                                <div class="badge"><a class="badge-btn" href="#">{{ post.category }}</a></div>
+                            </div>
+                            <div class="post-card-divider"></div>
+                            <h3 class="post-title">
+                                <a href="{% url 'detail_post' post.id %}">{{ post.title }}</a>
+                            </h3>
+                            <div class="post-content">
+                                <p>
+                                    {% if post.body|length > 150 %}
+                                        {{ post.body|slice:":150" }}... <a href="{% url 'detail_post' post.id %}">more</a>
+                                    {% else %}
+                                        {{ post.body }}
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <div class="read-more">
+                                <a href="{% url 'detail_post' post.id %}" class="theme-btn">Read More<i class="fa-solid fa-angle-right"></i></a>
+                                <div class="social-share">
+                                    <span class="social-share-title">share</span>
+                                    <a href="https://t.me/MarokandTravel"><i class="fab fa-telegram"></i></a>
+                                    <a href="https://www.instagram.com/marokandtravel.uz/"><i class="fab fa-instagram"></i></a>
+                                    <a class="linkedin" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Single Blog End -->
+                    {% endfor %}
+                </div>
+
+                <!-- Pagination Start -->
+                <div class="basic-pagination basic-pagination-2">
+                    <ul>
+                        {% if page_obj.has_previous %}
+                            <li><a class="prev page-numbers" href="?page={{ page_obj.previous_page_number }}"><i class="fa fa-arrow-left"></i></a></li>
+                        {% endif %}
+                        
+                        {% for num in page_obj.paginator.page_range %}
+                            {% if page_obj.number == num %}
+                                <li><a class="page-numbers current" href="#">{{ num }}</a></li>
+                            {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                                <li><a class="page-numbers" href="?page={{ num }}">{{ num }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% if page_obj.has_next %}
+                            <li><a class="next page-numbers" href="?page={{ page_obj.next_page_number }}"><i class="fa fa-arrow-right"></i></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+                <!-- Pagination End -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+{% endblock body %}

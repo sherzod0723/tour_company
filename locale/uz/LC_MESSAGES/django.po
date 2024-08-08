@@ -1,0 +1,1985 @@
+# BA'ZI TA'RIFLI NOM
+# Mualliflik huquqi (C) YIL PAKET MUALLIFI
+# Ushbu fayl PAKET paketining ayni litsenziyasi ostida tarqatiladi.
+# BIRINCHI MUALLIF <EMAIL@ADDRESS>, YIL.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PAKET VERSIYASI\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-08 17:14+0500\n"
+"PO-Revision-Date: YIL-AY-KUN SOAT:DAS+JON\n"
+"Last-Translator: TO'LIQ ISMI <EMAIL@ADDRESS>\n"
+"Language-Team: TIL <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: core/settings.py:138
+msgid "English"
+msgstr "Ingliz tili"
+
+#: core/settings.py:139 templates/index.html:363
+msgid "Russian"
+msgstr "Rus tili"
+
+#: core/settings.py:140
+msgid "Uzbek"
+msgstr "O'zbek tili"
+
+#: templates/base.html:97
+msgid "home"
+msgstr "Bosh sahifa"
+
+#: templates/base.html:102
+msgid "about us"
+msgstr "Biz haqimizda"
+
+#: templates/base.html:107
+msgid "tours"
+msgstr "Turlar"
+
+#: templates/base.html:112
+msgid "destination"
+msgstr "Manzil"
+
+#: templates/base.html:117
+msgid "blog"
+msgstr "Blog"
+
+#: templates/base.html:122
+msgid "contact us"
+msgstr "Aloqa"
+
+#: templates/base.html:145 templates/base.html:199
+msgid "Sign Up"
+msgstr "Ro'yxatdan o'tish"
+
+#: templates/base.html:196 templates/user/login.html:130
+#: templates/user/signup.html:138
+msgid "Login"
+msgstr "Kirish"
+
+#: templates/base.html:256 templates/main/about.html:51
+#: templates/main/contact.html:55 templates/main/destination_detail.html:18
+#: templates/main/destinations.html:52 templates/main/package_detail.html:17
+#: templates/main/package_list.html:16 templates/post/blog-single.html:17
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: templates/base.html:257 templates/post/blog-single.html:95
+msgid "Tour"
+msgstr "Sayohat"
+
+#: templates/base.html:258 templates/index.html:52
+#: templates/main/about.html:193 templates/main/destinations.html:48
+#: templates/main/destinations.html:53
+#, fuzzy
+#| msgid "destination"
+msgid "Destination"
+msgstr "Manzil"
+
+#: templates/base.html:259
+msgid "News"
+msgstr "Yangiliklar"
+
+#: templates/base.html:263
+msgid "Other pages"
+msgstr "Boshqa sahifalar"
+
+#: templates/base.html:265
+msgid "Adventure tour"
+msgstr "Sarguzasht tur"
+
+#: templates/base.html:266
+msgid "Couple tour"
+msgstr "Juftlik tur"
+
+#: templates/base.html:267
+msgid "Family tour"
+msgstr "Oila tur"
+
+#: templates/base.html:268
+msgid "Group tour"
+msgstr "Guruh tur"
+
+#: templates/base.html:278
+msgid "Book your holiday"
+msgstr "Ta'tilni bron qiling"
+
+#: templates/base.html:300
+msgid "Follow us"
+msgstr "Bizni kuzatib boring"
+
+#: templates/cart/booking.html:13
+msgid "Booking"
+msgstr "Bron qilish"
+
+#: templates/cart/booking.html:29
+msgid "Your Details"
+msgstr "Sizning ma'lumotlaringiz"
+
+#: templates/cart/booking.html:34
+msgid "First name"
+msgstr "Ism"
+
+#: templates/cart/booking.html:40
+msgid "Last name"
+msgstr "Familiya"
+
+#: templates/cart/booking.html:46 templates/main/contact.html:162
+#: templates/user/login.html:121 templates/user/signup.html:120
+msgid "Email"
+msgstr "Elektron pochta"
+
+#: templates/cart/booking.html:52
+msgid "Phone"
+msgstr "Telefon"
+
+#: templates/cart/booking.html:61
+msgid "Payment Information"
+msgstr "To'lov ma'lumotlari"
+
+#: templates/cart/booking.html:66
+msgid "Name on card"
+msgstr "Karta nomi"
+
+#: templates/cart/booking.html:74
+msgid "Card number"
+msgstr "Karta raqami"
+
+#: templates/cart/booking.html:87
+msgid "Expiration date"
+msgstr "Yaroqlilik muddati"
+
+#: templates/cart/booking.html:90
+msgid "MM"
+msgstr "YY"
+
+#: templates/cart/booking.html:93
+msgid "Year"
+msgstr "Yil"
+
+#: templates/cart/booking.html:100
+msgid "Security code"
+msgstr "Xavfsizlik kodi"
+
+#: templates/cart/booking.html:108
+msgid "Last 3 digits"
+msgstr "Oxirgi 3 raqam"
+
+#: templates/cart/booking.html:117
+msgid "Or checkout with Paypal"
+msgstr "Yoki Paypal orqali to'lov"
+
+#: templates/cart/booking.html:125
+msgid "Pay Now"
+msgstr "Hozir to'lash"
+
+#: templates/cart/booking.html:133
+msgid "Summary"
+msgstr "Yakun"
+
+#: templates/cart/booking.html:139
+msgid "Total cost"
+msgstr "Jami narx"
+
+#: templates/cart/booking.html:153
+msgid "HELP AND SUPPORT"
+msgstr "Yordam va qo'llab-quvvatlash"
+
+#: templates/cart/booking.html:155
+msgid "Monday to Friday 9.00am - 7.30pm"
+msgstr "Dushanbadan Jumagacha 9.00 - 19.30"
+
+#: templates/index.html:23
+msgid "Tour and travels"
+msgstr "Sayohat va safar"
+
+#: templates/index.html:24
+msgid "Lets travel the world with us"
+msgstr "Biz bilan dunyoni sayohat qiling"
+
+#: templates/index.html:26
+msgid ""
+"Enjoy unparalleled adventures and create unforgettable memories while we "
+"take care of the details. Join us and embrace a journey that goes beyond the "
+"ordinary."
+msgstr ""
+"Tafsilotlar bilan shug'ullanar ekanmiz, misli ko'rilmagan sarguzashtlardan "
+"rohatlaning va unutilmas xotiralar yarating. Bizga qo'shiling va odatdagidan "
+"tashqari sayohatni qabul qiling."
+
+#: templates/index.html:53
+#, fuzzy
+#| msgid "destination"
+msgid "Popular destination"
+msgstr "Mashhur manzil"
+
+#: templates/index.html:103 templates/main/about.html:52
+#: templates/main/about.html:72
+#, fuzzy
+#| msgid "about us"
+msgid "About us"
+msgstr "Biz haqimizda"
+
+#: templates/index.html:104 templates/main/about.html:73
+msgid "We create journeys for the excited traveler"
+msgstr "Biz hayajonlangan sayohatchilar uchun sayohatlarni yaratamiz"
+
+#: templates/index.html:113 templates/main/about.html:82
+msgid "Best of hotel"
+msgstr "Eng yaxshi mehmonxonalar"
+
+#: templates/index.html:114 templates/index.html:123
+#: templates/main/about.html:83 templates/main/about.html:92
+msgid ""
+"Embark on world-class journeys crafted for the discerning traveler, where "
+"luxury meets adventure at the finest hotels and destinations across the "
+"globe."
+msgstr ""
+"Dunyo darajasidagi sayohatlarni boshlang, unda hashamat eng yaxshi "
+"mehmonxonalar va manzillarda sarguzasht bilan birlashadi."
+
+#: templates/index.html:122 templates/main/about.html:91
+msgid "World class travel"
+msgstr "Dunyo darajasidagi sayohat"
+
+#: templates/index.html:127 templates/main/about.html:96
+#, fuzzy
+#| msgid "Learn More"
+msgid "Learn more"
+msgstr "Ko'proq ma'lumot"
+
+#: templates/index.html:144 templates/main/about.html:113
+msgid "customers"
+msgstr "Mijozlar"
+
+#: templates/index.html:176
+msgid "Popular packages"
+msgstr "Mashhur paketlar"
+
+#: templates/index.html:177 templates/main/package_list.html:35
+msgid "Find popular tours"
+msgstr "Mashhur turlarni toping"
+
+#: templates/index.html:239
+msgid "Why choose us"
+msgstr "Nega bizni tanlash kerak"
+
+#: templates/index.html:240
+msgid "Get the best travel experience with travello"
+msgstr "Travello bilan eng yaxshi sayohat tajribasini oling"
+
+#: templates/index.html:244
+msgid ""
+"Experience the ultimate in travel with Travello, where every journey is "
+"tailored to perfection."
+msgstr ""
+"Travello bilan sayohatning eng yuqori darajasini tajriba qiling, har bir "
+"sayohat mukammal tarzda moslashtirilgan."
+
+#: templates/index.html:261
+msgid "Tour guide"
+msgstr "Sayohat gid"
+
+#: templates/index.html:262
+msgid ""
+"Experience unforgettable adventures with our expert tour guides, who bring "
+"each destination to life with their knowledge and passion."
+msgstr ""
+"Bizning ekspert gidlarimiz bilan unutilmas sarguzashtlarni tajriba qiling, "
+"ular har bir manzilni bilim va ehtiros bilan hayotga qaytaradi."
+
+#: templates/index.html:270
+msgid "Friendly price"
+msgstr "Do'stona narx"
+
+#: templates/index.html:271
+msgid ""
+"Enjoy exceptional travel experiences with friendly prices that fit your "
+"budget, without compromising on quality or comfort."
+msgstr ""
+"Budjetingizga mos do'stona narxlarda ajoyib sayohat tajribalaridan "
+"rohatlaning, biroq sifat yoki qulaylikni qurbon qilmasdan."
+
+#: templates/index.html:279
+msgid "Instant booking"
+msgstr "Zudlik bilan bron qilish"
+
+#: templates/index.html:280
+msgid ""
+"Secure your dream adventure in just a few clicks with our instant booking "
+"feature, making travel planning effortless and immediate."
+msgstr ""
+"Bizning zudlik bilan bron qilish funksiyamiz bilan orzularingizdagi "
+"sarguzashtni bir necha klikda xavfsiz rejalashtiring, sayohatni "
+"rejalashtirishni oson va darhol qilamiz."
+
+#: templates/index.html:296 templates/main/about.html:144
+msgid "Our process"
+msgstr "Bizning jarayonimiz"
+
+#: templates/index.html:297 templates/main/about.html:145
+msgid "Revolutionising the ways we travel"
+msgstr "Sayohat qilish usullarini inqilob qilish"
+
+#: templates/index.html:308 templates/main/about.html:156
+msgid "Book & relax"
+msgstr "Bron qilish va dam olish"
+
+#: templates/index.html:309 templates/main/about.html:157
+msgid "Book your dream getaway and relax while we take care of the rest."
+msgstr ""
+"Orzularingizdagi ta'tilni bron qiling va qolganini biz hal qilgan holda dam "
+"oling."
+
+#: templates/index.html:319 templates/main/about.html:167
+msgid "Smart checklist"
+msgstr "Aqlli tekshirish ro'yxati"
+
+#: templates/index.html:320 templates/main/about.html:168
+msgid ""
+"Stay organized and on track with our Smart Checklist, designed to streamline "
+"your tasks and ensure nothing gets overlooked."
+msgstr ""
+"Bizning Aqlli Tekshirish Ro'yxatimiz bilan tartibda bo'ling va ishlaringizni "
+"yengillashtiring, hech narsa e'tibordan chetda qolmasin."
+
+#: templates/index.html:330 templates/main/about.html:178
+msgid "Save more"
+msgstr "Ko'proq tejang"
+
+#: templates/index.html:331 templates/main/about.html:179
+msgid ""
+"Save more on your next adventure with unbeatable deals that let you explore "
+"the world without breaking the bank."
+msgstr ""
+"Keyingi sarguzashtingizda eng yaxshi takliflar bilan ko'proq tejang, bu "
+"sizga dunyo bo'ylab sayohat qilish imkonini beradi va byudjetni oshirmaydi."
+
+#: templates/index.html:353
+msgid "Colombia"
+msgstr "Kolumbiya"
+
+#: templates/index.html:373
+msgid "Istanbul"
+msgstr "Istanbul"
+
+#: templates/index.html:383 templates/main/about.html:318
+msgid "Testimonial"
+msgstr "Fikr-mulohaza"
+
+#: templates/index.html:384 templates/main/about.html:319
+msgid "What traveler says"
+msgstr "Sayohatchining aytganlari"
+
+#: templates/index.html:394
+msgid ""
+"Their service is absolutely wonderful and cheaper than the direct or any "
+"other booking site, You back to us strait away and no issues at all in the "
+"other end."
+msgstr ""
+"Ularning xizmatlari mutlaqo ajoyib va to'g'ridan-to'g'ri yoki boshqa har "
+"qanday bron qilish saytlaridan arzonroq, siz bizga darhol qaytasiz va boshqa "
+"tomonda hech qanday muammo bo'lmaydi."
+
+#: templates/main/about.html:47
+msgid "Looking for joy?"
+msgstr "Baxt izlayapsizmi?"
+
+#: templates/main/about.html:194
+msgid "Experience the new adventure with us"
+msgstr "Biz bilan yangi sarguzashtni tajriba qiling"
+
+#: templates/main/about.html:199
+msgid ""
+"Experience a new adventure with us and uncover the world's hidden wonders "
+"like never before."
+msgstr ""
+"Biz bilan yangi sarguzashtni tajriba qiling va dunyoning yashirin "
+"mo'jizalarini hech qachon bo'lmagan tarzda oching."
+
+#: templates/main/about.html:202
+msgid "Discover more"
+msgstr "Ko'proq kashf eting"
+
+#: templates/main/about.html:221 templates/main/about.html:229
+msgid "New users per week"
+msgstr "Har hafta yangi foydalanuvchilar"
+
+#: templates/main/about.html:225 templates/main/about.html:233
+msgid "Monthly active user"
+msgstr "Oylik faol foydalanuvchi"
+
+#: templates/main/about.html:245
+msgid "Our amazing team"
+msgstr "Bizning ajoyib jamoamiz"
+
+#: templates/main/about.html:274
+msgid "Leave a Testimonial"
+msgstr "Fikr-mulohaza qoldiring"
+
+#: templates/main/contact.html:51 templates/main/contact.html:56
+#, fuzzy
+#| msgid "contact us"
+msgid "Contact Us"
+msgstr "Aloqa"
+
+#: templates/main/contact.html:77
+#, fuzzy
+#| msgid "Card number"
+msgid "Contact number"
+msgstr "Karta raqami"
+
+#: templates/main/contact.html:92
+#, fuzzy
+#| msgid "email address"
+msgid "Mail address"
+msgstr "elektron pochta manzili"
+
+#: templates/main/contact.html:105
+#, fuzzy
+#| msgid "email address"
+msgid "Office address"
+msgstr "Idora pochta manzili"
+
+#: templates/main/contact.html:144 templates/user/signup.html:112
+msgid "First Name"
+msgstr "Ism"
+
+#: templates/main/contact.html:150 templates/user/signup.html:116
+msgid "Last Name"
+msgstr "Familiya"
+
+#: templates/main/contact.html:156
+#, fuzzy
+#| msgid "November"
+msgid "Phone Number"
+msgstr "Noyabr"
+
+#: templates/main/contact.html:168
+msgid "Your Comment"
+msgstr "Sizning izohingiz"
+
+#: templates/main/contact.html:173
+msgid "Submit Now"
+msgstr "Hozir yuboring"
+
+#: templates/main/destination_detail.html:19
+#, fuzzy
+#| msgid "destination"
+msgid "Destination detail"
+msgstr "Manzil"
+
+#: templates/main/destination_detail.html:46
+#: templates/main/package_detail.html:68
+#, fuzzy
+#| msgid "about us"
+msgid "About"
+msgstr "Biz haqimizda"
+
+#: templates/main/destination_detail.html:69 templates/post/blog-single.html:79
+msgid "Categories"
+msgstr "Kategoriyalar"
+
+#: templates/main/destination_detail.html:72 templates/post/blog-single.html:82
+#: templates/post/blog-single.html:94
+#, fuzzy
+#| msgid "Adventure tour"
+msgid "Adventure"
+msgstr "Sarguzasht tur"
+
+#: templates/main/destination_detail.html:73 templates/post/blog-single.html:83
+#: templates/post/blog-single.html:100
+#, fuzzy
+#| msgid "Booking"
+msgid "Hiking"
+msgstr "Bron qilish"
+
+#: templates/main/destination_detail.html:74 templates/post/blog-single.html:84
+msgid "Culture"
+msgstr "Madaniyat"
+
+#: templates/main/destination_detail.html:75 templates/post/blog-single.html:85
+msgid "Uncategorized"
+msgstr "Kategoriyasiz"
+
+#: templates/main/destinations.html:68
+#, fuzzy
+#| msgid "destination"
+msgid "Popular Destinations"
+msgstr "Mashhur manzil"
+
+#: templates/main/destinations.html:136
+msgid "No destinations available."
+msgstr "Hech qanday manzillar mavjud emas"
+
+#: templates/main/package_detail.html:18
+#, fuzzy
+#| msgid "Your Details"
+msgid "Tour detail"
+msgstr "Sizning ma'lumotlaringiz"
+
+#: templates/main/package_detail.html:98
+msgid "Book this tour"
+msgstr "Ushbu turni bron qiling"
+
+#: templates/main/package_detail.html:105
+#, fuzzy
+#| msgid "Booking"
+msgid "Book now"
+msgstr "Bron qilish"
+
+#: templates/main/package_list.html:12
+msgid "Get The Best Plans For Your’s"
+msgstr "O'zingiz uchun eng yaxshi rejalarni oling"
+
+#: templates/main/package_list.html:17
+#, fuzzy
+#| msgid "Popular packages"
+msgid "Tour-package"
+msgstr "Mashhur paketlar"
+
+#: templates/main/package_list.html:43
+msgid "All"
+msgstr "Barchasi"
+
+#: templates/main/special_package.html:17
+msgid "Package Offer"
+msgstr "Taklif paket"
+
+#: templates/main/special_package.html:36
+msgid "off"
+msgstr "chegirma"
+
+#: templates/main/special_package.html:62
+msgid "price"
+msgstr "narx"
+
+#: templates/main/special_package.html:66
+msgid "Add to cart"
+msgstr "Savatga qo'shish"
+
+#: templates/main/special_package.html:87
+msgid "ARE YOU READY TO TRAVEL? REMEMBER US "
+msgstr "Sayohatga tayyormisiz? Bizni eslab qoling "
+
+#: templates/main/special_package.html:90
+msgid "View Packages"
+msgstr "Paketlarni ko'rish"
+
+#: templates/main/special_package.html:91
+msgid "Learn More"
+msgstr "Ko'proq ma'lumot"
+
+#: templates/post/blog-single.html:13 templates/post/blog-single.html:18
+#, fuzzy
+#| msgid "Your Details"
+msgid "Blog detail"
+msgstr "Sizning ma'lumotlaringiz"
+
+#: templates/post/blog-single.html:93
+msgid "Travel"
+msgstr "Sayohat"
+
+#: templates/post/blog-single.html:96
+msgid "Mountain"
+msgstr "Tog'"
+
+#: templates/post/blog-single.html:97
+#, fuzzy
+#| msgid "Family tour"
+msgid "Family"
+msgstr "Oila tur"
+
+#: templates/post/blog-single.html:98
+msgid "People"
+msgstr "Odamlar"
+
+#: templates/post/blog-single.html:99
+msgid "Sports"
+msgstr "Sportlar"
+
+#: templates/post/blog-single.html:101
+msgid "Swimming"
+msgstr "Suzish
+
+#: templates/post/blog-single.html:103
+msgid "Explore"
+msgstr "Kashf etish"
+
+#: templates/post/blog-single.html:104
+msgid "Autumn"
+msgstr "Kuz"
+
+#: templates/post/blog-single.html:109
+msgid "Social"
+msgstr "Ijtimoiy tarmoqlar"
+
+#: templates/user/login.html:125 templates/user/signup.html:124
+msgid "Password"
+msgstr "Parol"
+
+#: templates/user/login.html:127
+msgid "Fill in Email field"
+msgstr "Elektron pochta maydonini to'ldiring"
+
+#: templates/user/login.html:128 templates/user/reset_password_form.html:127
+#: templates/user/signup.html:130
+msgid "Fill in all fields"
+msgstr "Barcha maydonlarni to'ldiring"
+
+#: templates/user/login.html:129
+msgid "Login or Password is incorrect"
+msgstr "Kirish yoki parol noto'g'ri"
+
+#: templates/user/login.html:133
+msgid "Forget password?"
+msgstr "Parolni unutdingizmi?"
+
+#: templates/user/login.html:133
+msgid "  or  "
+msgstr " yoki "
+
+#: templates/user/login.html:133 templates/user/signup.html:135
+msgid "Register"
+msgstr "Ro'yxatdan o'tish"
+
+#: templates/user/reset_password_form.html:115
+msgid "Create a new password"
+msgstr "Yangi parol yarating"
+
+#: templates/user/reset_password_form.html:128 templates/user/signup.html:131
+msgid "Passwords did not match"
+msgstr "Parollar mos kelmaydi"
+
+#: templates/user/reset_password_form.html:129
+msgid "Reset"
+msgstr "Qayta tiklash"
+
+#: templates/user/signup.html:128
+msgid "Password Confirm"
+msgstr "Parolni tasdiqlash"
+
+#: user/models.py:13
+msgid "first name"
+msgstr "ism"
+
+#: user/models.py:14
+msgid "last name"
+msgstr "familiya"
+
+#: user/models.py:15
+msgid "email address"
+msgstr "elektron pochta manzili"
+
+#: user/models.py:18
+msgid "username"
+msgstr "foydalanuvchi nomi"
+
+#: user/models.py:22
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr "Majburiy. 150 ta belgidan kam. Harflar, raqamlar va @/./+/-/_ faqat."
+
+#: user/models.py:26
+msgid "A user with that username already exists."
+msgstr "Bu foydalanuvchi nomiga ega foydalanuvchi allaqachon mavjud."
+
+#: vnv/lib/python3.10/site-packages/bootstrap4/components.py:17
+#: vnv/lib/python3.10/site-packages/bootstrap4/templates/bootstrap4/form_errors.html:3
+#: vnv/lib/python3.10/site-packages/bootstrap4/templates/bootstrap4/messages.html:4
+msgid "close"
+msgstr "yopish"
+
+#: vnv/lib/python3.10/site-packages/django/contrib/messages/apps.py:15
+msgid "Messages"
+msgstr "Xabarlar"
+
+#: vnv/lib/python3.10/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr "Sayt xaritalari"
+
+#: vnv/lib/python3.10/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr "Statik fayllar"
+
+#: vnv/lib/python3.10/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr "Sindikatsiya"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: vnv/lib/python3.10/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: vnv/lib/python3.10/site-packages/django/core/paginator.py:50
+msgid "That page number is not an integer"
+msgstr "Bu sahifa raqami butun son emas"
+
+#: vnv/lib/python3.10/site-packages/django/core/paginator.py:52
+msgid "That page number is less than 1"
+msgstr "Bu sahifa raqami 1 dan kichik"
+
+#: vnv/lib/python3.10/site-packages/django/core/paginator.py:54
+msgid "That page contains no results"
+msgstr "Bu sahifada natijalar yo'q"
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr "Yaroqli qiymat kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:104
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:752
+msgid "Enter a valid URL."
+msgstr "Yaroqli URL kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:165
+msgid "Enter a valid integer."
+msgstr "Yaroqli butun son kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:176
+msgid "Enter a valid email address."
+msgstr "Yaroqli elektron pochta manzilini kiriting."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:259
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"Harflar, raqamlar, pastki chiziqlar yoki chiziqlardan iborat yaroqli “slug” "
+"kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:267
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+"Unicode harflar, raqamlar, pastki chiziqlar yoki chiziqlardan iborat yaroqli "
+"“slug” kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:279
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:287
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:316
+msgid "Enter a valid IPv4 address."
+msgstr "Yaroqli IPv4 manzilini kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:296
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:317
+msgid "Enter a valid IPv6 address."
+msgstr "Yaroqli IPv6 manzilini kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:308
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:315
+msgid "Enter a valid IPv4 or IPv6 address."
+msgstr "Yaroqli IPv4 yoki IPv6 manzilini kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:351
+msgid "Enter only digits separated by commas."
+msgstr "Faqat raqamlar va ularni vergul bilan ajrating."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:357
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "Bu qiymat %(limit_value)s bo'lishi kerak (hozirda %(show_value)s)."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:392
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "Bu qiymat %(limit_value)s dan kam yoki teng bo'lishini ta'minlang."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:401
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "Bu qiymat %(limit_value)s dan katta yoki teng bo'lishini ta'minlang."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:410
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+"Bu qiymat %(limit_value)s qadam o'lchamining ko'paytmasi bo'lishini "
+"ta'minlang."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:420
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Bu qiymat kamida %(limit_value)d ta belgi bo'lishini ta'minlang (hozirda "
+"%(show_value)d)."
+msgstr[1] ""
+"Bu qiymat kamida %(limit_value)d ta belgi bo'lishini ta'minlang (hozirda "
+"%(show_value)d)."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:438
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+"Bu qiymat eng ko'p %(limit_value)d ta belgi bo'lishini ta'minlang (hozirda "
+"%(show_value)d)."
+msgstr[1] ""
+"Bu qiymat eng ko'p %(limit_value)d ta belgi bo'lishini ta'minlang (hozirda "
+"%(show_value)d)."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:461
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:347
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:386
+msgid "Enter a number."
+msgstr "Raqam kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:463
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] "Jami raqamlar %(max)s dan oshmasligini ta'minlang."
+msgstr[1] "Jami raqamlar %(max)s dan oshmasligini ta'minlang."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:468
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] "Jami kasr joylar %(max)s dan oshmasligini ta'minlang."
+msgstr[1] "Jami kasr joylar %(max)s dan oshmasligini ta'minlang."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:473
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+"Kasr nuqtasidan oldin %(max)s dan ortiq raqamlar bo'lmasligini ta'minlang."
+msgstr[1] ""
+"Kasr nuqtasidan oldin %(max)s dan ortiq raqamlar bo'lmasligini ta'minlang."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:544
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"“%(extension)s” fayl kengaytmasi ruxsat etilmagan. Ruxsat etilgan "
+"kengaytmalar: %(allowed_extensions)s."
+
+#: vnv/lib/python3.10/site-packages/django/core/validators.py:605
+msgid "Null characters are not allowed."
+msgstr "Null belgilarga ruxsat etilmaydi."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/base.py:1423
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:893
+msgid "and"
+msgstr "va"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/base.py:1425
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(field_labels)s bilan %(model_name)s allaqachon mavjud."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/constraints.py:17
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "“%(name)s” chekloviga amal qilinmadi."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:128
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "Qiymat %(value)r yaroqli variant emas."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:129
+msgid "This field cannot be null."
+msgstr "Bu maydon null bo'lolmaydi."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:130
+msgid "This field cannot be blank."
+msgstr "Bu maydon bo'sh bo'lolmaydi."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:131
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(field_label)s bilan %(model_name)s allaqachon mavjud."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:135
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s %(date_field_label)s %(lookup_type)s uchun noyob bo'lishi "
+"kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:173
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "Maydon turi: %(field_type)s"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1094
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "“%(value)s” qiymati True yoki False bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1095
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "“%(value)s” qiymati True, False yoki None bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1097
+msgid "Boolean (Either True or False)"
+msgstr "Boolean (True yoki False)"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1147
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "Matn (%(max_length)s gacha)"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1149
+msgid "String (unlimited)"
+msgstr "Matn (cheksiz)"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1253
+msgid "Comma-separated integers"
+msgstr "Vergul bilan ajratilgan butun sonlar"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1354
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"“%(value)s” qiymati noto'g'ri sana formatiga ega. YYYY-MM-DD formatida "
+"bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1358
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1493
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"“%(value)s” qiymati to'g'ri formatda (YYYY-MM-DD) lekin noto'g'ri sana."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1362
+msgid "Date (without time)"
+msgstr "Sana (vaqtsiz)"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1489
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+"“%(value)s” qiymati noto'g'ri formatga ega. YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ] formatida bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1497
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+"“%(value)s” qiymati to'g'ri formatda (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) "
+"lekin noto'g'ri sana/vaqt."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1502
+msgid "Date (with time)"
+msgstr "Sana (vaqt bilan)"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1626
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” qiymati kasr soni bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1628
+msgid "Decimal number"
+msgstr "Kasr soni"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1789
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+"“%(value)s” qiymati noto'g'ri formatga ega. [DD] [[HH:]MM:]ss[.uuuuuu] "
+"formatida bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1793
+msgid "Duration"
+msgstr "Davomiylik"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1845
+msgid "Email address"
+msgstr "Elektron pochta manzili"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1870
+msgid "File path"
+msgstr "Fayl yo'li"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1948
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” qiymati suyuq son bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1950
+msgid "Floating point number"
+msgstr "Suyuq nuqtali son"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1990
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” qiymati butun son bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1992
+msgid "Integer"
+msgstr "Butun son"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2088
+msgid "Big (8 byte) integer"
+msgstr "Katta (8 bayt) butun son"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2105
+msgid "Small integer"
+msgstr "Kichik butun son"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2113
+msgid "IPv4 address"
+msgstr "IPv4 manzili"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2144
+msgid "IP address"
+msgstr "IP manzil"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2237
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2238
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "“%(value)s” qiymati None, True yoki False bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2240
+msgid "Boolean (Either True, False or None)"
+msgstr "Boolean (True, False yoki None)"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2291
+msgid "Positive big integer"
+msgstr "Musbat katta butun son"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2306
+msgid "Positive integer"
+msgstr "Musbat butun son"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2321
+msgid "Positive small integer"
+msgstr "Musbat kichik butun son"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2337
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "Slug (%(max_length)s gacha)"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2373
+msgid "Text"
+msgstr "Matn"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2448
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"“%(value)s” qiymati noto'g'ri formatga ega. HH:MM[:ss[.uuuuuu]] formatida "
+"bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2452
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"“%(value)s” qiymati to'g'ri formatda (HH:MM[:ss[.uuuuuu]]) lekin noto'g'ri "
+"vaqt."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2456
+msgid "Time"
+msgstr "Vaqt"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2564
+msgid "URL"
+msgstr "URL"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2588
+msgid "Raw binary data"
+msgstr "Xom binaer ma'lumot"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2653
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” yaroqli UUID emas."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:2655
+msgid "Universally unique identifier"
+msgstr "Butun dunyo bo'ylab yagona identifikator"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/files.py:232
+msgid "File"
+msgstr "Fayl"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/files.py:393
+msgid "Image"
+msgstr "Rasm"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/json.py:26
+msgid "A JSON object"
+msgstr "JSON obyekti"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/json.py:28
+msgid "Value must be valid JSON."
+msgstr "Qiymat yaroqli JSON bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/related.py:919
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgstr "%(model)s modelidagi %(field)s %(value)r mavjud emas."
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/related.py:921
+msgid "Foreign Key (type determined by related field)"
+msgstr "Tashqi kalit (bog'liq maydon tomonidan aniqlanadi)"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/related.py:1212
+msgid "One-to-one relationship"
+msgstr "Birga-bir munosabat"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/related.py:1269
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(from)s-%(to)s munosabat"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/related.py:1271
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(from)s-%(to)s munosabatlar"
+
+#: vnv/lib/python3.10/site-packages/django/db/models/fields/related.py:1319
+msgid "Many-to-many relationship"
+msgstr "Ko'p-ko'p munosabat"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: vnv/lib/python3.10/site-packages/django/forms/boundfield.py:184
+msgid ":?.!"
+msgstr ":?.!"
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:91
+msgid "This field is required."
+msgstr "Bu maydon talab qilinadi."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:298
+msgid "Enter a whole number."
+msgstr "Butun son kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:467
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:1241
+msgid "Enter a valid date."
+msgstr "Yaroqli sana kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:490
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:1242
+msgid "Enter a valid time."
+msgstr "Yaroqli vaqt kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:517
+msgid "Enter a valid date/time."
+msgstr "Yaroqli sana/vaqt kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:551
+msgid "Enter a valid duration."
+msgstr "Yaroqli davomiylik kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:552
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "Kunlar soni {min_days} va {max_days} orasida bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:621
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr "Fayl yuborilmadi. Formaning kodlash turini tekshiring."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:622
+msgid "No file was submitted."
+msgstr "Fayl yuborilmadi."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:623
+msgid "The submitted file is empty."
+msgstr "Yuborilgan fayl bo'sh."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:625
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+"Bu fayl nomi eng ko'p %(max)d ta belgi bo'lishini ta'minlang (hozirda "
+"%(length)d)."
+msgstr[1] ""
+"Bu fayl nomi eng ko'p %(max)d ta belgi bo'lishini ta'minlang (hozirda "
+"%(length)d)."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:630
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+"Iltimos, fayl yuboring yoki tozalash katagiga belgi qo'ying, ikkalasini ham "
+"emas."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:694
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"Yaroqli rasm yuklang. Yuklangan fayl rasm emas yoki buzilgan rasm bo'ldi."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:857
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:949
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:1566
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "Yaroqli variantni tanlang. %(value)s mavjud variantlardan biri emas."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:951
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:1070
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:1564
+msgid "Enter a list of values."
+msgstr "Qiymatlar ro'yxatini kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:1071
+msgid "Enter a complete value."
+msgstr "To'liq qiymat kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:1310
+msgid "Enter a valid UUID."
+msgstr "Yaroqli UUID kiriting."
+
+#: vnv/lib/python3.10/site-packages/django/forms/fields.py:1340
+msgid "Enter a valid JSON."
+msgstr "Yaroqli JSON kiriting."
+
+#. Translators: This is the default suffix added to form field labels
+#: vnv/lib/python3.10/site-packages/django/forms/forms.py:98
+msgid ":"
+msgstr ":"
+
+#: vnv/lib/python3.10/site-packages/django/forms/forms.py:244
+#: vnv/lib/python3.10/site-packages/django/forms/forms.py:328
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(Yashirin maydon %(name)s) %(error)s"
+
+#: vnv/lib/python3.10/site-packages/django/forms/formsets.py:63
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"ManagementForm ma'lumotlari yo'q yoki o'zgartirilgan. Yo'qolgan maydonlar: "
+"%(field_names)s. Agar muammo davom etsa, xatolik haqida hisobot "
+"yuborishingiz kerak bo'lishi mumkin."
+
+#: vnv/lib/python3.10/site-packages/django/forms/formsets.py:67
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] "Iltimos, eng ko'p %(num)d form yuboring."
+msgstr[1] "Iltimos, eng ko'p %(num)d ta form yuboring."
+
+#: vnv/lib/python3.10/site-packages/django/forms/formsets.py:72
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] "Iltimos, kamida %(num)d form yuboring."
+msgstr[1] "Iltimos, kamida %(num)d ta form yuboring."
+
+#: vnv/lib/python3.10/site-packages/django/forms/formsets.py:484
+#: vnv/lib/python3.10/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr "Tartib"
+
+#: vnv/lib/python3.10/site-packages/django/forms/formsets.py:499
+msgid "Delete"
+msgstr "O'chirish"
+
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:886
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "%(field)s uchun takrorlangan ma'lumotlarni to'g'rilang."
+
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:891
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+"%(field)s uchun takrorlangan ma'lumotlarni to'g'rilang, bu yagona bo'lishi "
+"kerak."
+
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:898
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"%(field_name)s uchun takrorlangan ma'lumotlarni to'g'rilang, bu %(lookup)s "
+"%(date_field)s da yagona bo'lishi kerak."
+
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:907
+msgid "Please correct the duplicate values below."
+msgstr "Quyidagi takrorlangan qiymatlarni to'g'rilang."
+
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:1338
+msgid "The inline value did not match the parent instance."
+msgstr "Inline qiymat ota-ona instansiyasiga mos kelmadi."
+
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:1429
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+"Yaroqli variantni tanlang. O'sha variant mavjud variantlardan biri emas."
+
+#: vnv/lib/python3.10/site-packages/django/forms/models.py:1568
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” yaroqli qiymat emas."
+
+#: vnv/lib/python3.10/site-packages/django/forms/utils.py:226
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s %(current_timezone)s vaqt zonasida talqin qilib bo'lmaydi; bu "
+"aniqsiz bo'lishi mumkin yoki mavjud bo'lmasligi mumkin."
+
+#: vnv/lib/python3.10/site-packages/django/forms/widgets.py:463
+msgid "Clear"
+msgstr "Tozalash"
+
+#: vnv/lib/python3.10/site-packages/django/forms/widgets.py:464
+msgid "Currently"
+msgstr "Hozirda"
+
+#: vnv/lib/python3.10/site-packages/django/forms/widgets.py:465
+msgid "Change"
+msgstr "O'zgartirish"
+
+#: vnv/lib/python3.10/site-packages/django/forms/widgets.py:794
+msgid "Unknown"
+msgstr "Noma'lum"
+
+#: vnv/lib/python3.10/site-packages/django/forms/widgets.py:795
+msgid "Yes"
+msgstr "Ha"
+
+#: vnv/lib/python3.10/site-packages/django/forms/widgets.py:796
+msgid "No"
+msgstr "Yo'q"
+
+#. Translators: Please do not add spaces around commas.
+#: vnv/lib/python3.10/site-packages/django/template/defaultfilters.py:861
+msgid "yes,no,maybe"
+msgstr "ha,no,balki"
+
+#: vnv/lib/python3.10/site-packages/django/template/defaultfilters.py:891
+#: vnv/lib/python3.10/site-packages/django/template/defaultfilters.py:908
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] "%(size)d bayt"
+msgstr[1] "%(size)d bayt"
+
+#: vnv/lib/python3.10/site-packages/django/template/defaultfilters.py:910
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: vnv/lib/python3.10/site-packages/django/template/defaultfilters.py:912
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: vnv/lib/python3.10/site-packages/django/template/defaultfilters.py:914
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: vnv/lib/python3.10/site-packages/django/template/defaultfilters.py:916
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: vnv/lib/python3.10/site-packages/django/template/defaultfilters.py:918
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dateformat.py:73
+msgid "p.m."
+msgstr "kechq."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dateformat.py:74
+msgid "a.m."
+msgstr "tong"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dateformat.py:79
+msgid "PM"
+msgstr "kechq."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dateformat.py:80
+msgid "AM"
+msgstr "tong"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dateformat.py:152
+msgid "midnight"
+msgstr "tunggi o'n ikki"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dateformat.py:154
+msgid "noon"
+msgstr "tush"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr "Dushanba"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr "Seshanba"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr "Chorshanba"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr "Payshanba"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr "Juma"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr "Shanba"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr "Yakshanba"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr "Dush"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr "Ses"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr "Chor"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr "Pay"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr "Jum"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr "Shan"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr "Yak"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr "Yanvar"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr "Fevral"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr "Mart"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr "Aprel"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr "May"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr "Iyun"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr "Iyul"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr "Avgust"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr "Sentabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr "Oktabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr "Noyabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr "Dekabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr "yan"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr "fev"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr "mar"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr "apr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr "may"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr "iyun"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr "iyul"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr "avg"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr "sentabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr "oktabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr "noyabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr "dekabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "Yan."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "Fev."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "Mart"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "Aprel"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "May"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "Iyun"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "Iyul"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "Avg."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "Sent."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "Okt."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "Noy."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "Dek."
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "Yanvar"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "Fevral"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "Mart"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "Aprel"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "May"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "Iyun"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "Iyul"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "Avgust"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "Sentabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "Oktabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "Noyabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "Dekabr"
+
+#: vnv/lib/python3.10/site-packages/django/utils/ipv6.py:8
+msgid "This is not a valid IPv6 address."
+msgstr "Bu haqiqiy IPv6 manzil emas."
+
+#: vnv/lib/python3.10/site-packages/django/utils/text.py:84
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "%(truncated_text)s…"
+
+#: vnv/lib/python3.10/site-packages/django/utils/text.py:269
+msgid "or"
+msgstr "yoki"
+
+#. Translators: This string is used as a separator between list elements
+#: vnv/lib/python3.10/site-packages/django/utils/text.py:288
+#: vnv/lib/python3.10/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ", "
+
+#: vnv/lib/python3.10/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] "%(num)d yil"
+msgstr[1] "%(num)d yil"
+
+#: vnv/lib/python3.10/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] "%(num)d oy"
+msgstr[1] "%(num)d oy"
+
+#: vnv/lib/python3.10/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] "%(num)d hafta"
+msgstr[1] "%(num)d hafta"
+
+#: vnv/lib/python3.10/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] "%(num)d kun"
+msgstr[1] "%(num)d kun"
+
+#: vnv/lib/python3.10/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] "%(num)d soat"
+msgstr[1] "%(num)d soat"
+
+#: vnv/lib/python3.10/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] "%(num)d daqiqa"
+msgstr[1] "%(num)d daqiqa"
+
+#: vnv/lib/python3.10/site-packages/django/views/csrf.py:111
+msgid "Forbidden"
+msgstr "Ta'qiqlangan"
+
+#: vnv/lib/python3.10/site-packages/django/views/csrf.py:112
+msgid "CSRF verification failed. Request aborted."
+msgstr "CSRF tekshiruvi muvaffaqiyatsiz. So'rov to'xtatildi."
+
+#: vnv/lib/python3.10/site-packages/django/views/csrf.py:116
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"Siz ushbu xabarni ko'ryapsiz, chunki ushbu HTTPS sayti sizning veb-"
+"brauzeringiz tomonidan “Referer” sarlavhasining yuborilishini talab qiladi, "
+"lekin hech qanday yuborilgan emas. Ushbu sarlavha xavfsizlik sabablaridan "
+"talab qilinadi, brauzeringiz uchinchi tomonlar tomonidan o'g'irlanmasligi "
+"uchun."
+
+#: vnv/lib/python3.10/site-packages/django/views/csrf.py:122
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"Agar siz brauzeringizni “Referer” sarlavhalarini o'chirishga sozlagan "
+"bo'lsangiz, iltimos, ularni qayta yoqing, kamida ushbu sayt uchun, yoki "
+"HTTPS ulanishlari, yoki “bir xil manba” so'rovlar uchun."
+
+#: vnv/lib/python3.10/site-packages/django/views/csrf.py:127
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"Agar siz <meta name=\"referrer\" content=\"no-referrer\"> tegini "
+"ishlatayotgan bo'lsangiz yoki “Referrer-Policy: no-referrer” sarlavhasini "
+"qo'shayotgan bo'lsangiz, iltimos, ularni olib tashlang. CSRF himoyasi qat'iy "
+"referer tekshiruvi uchun sarlavhasini talab qiladi. Agar siz maxfiylik "
+"haqida xavotirda bo'lsangiz, uchinchi tomon saytlari uchun <a "
+"rel=\"noreferrer\" …> kabi alternativalarni ishlatishingiz mumkin."
+
+#: vnv/lib/python3.10/site-packages/django/views/csrf.py:136
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"Siz ushbu xabarni ko'ryapsiz, chunki ushbu sayt forma yuborish vaqtida CSRF "
+"cookie talab qiladi. Ushbu cookie xavfsizlik sabablaridan talab qilinadi, "
+"brauzeringiz uchinchi tomonlar tomonidan o'g'irlanmasligini ta'minlash uchun."
+
+#: vnv/lib/python3.10/site-packages/django/views/csrf.py:142
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"Agar siz brauzeringizni cookie fayllarini o'chirishga sozlagan bo'lsangiz, "
+"iltimos, ularni qayta yoqing, kamida ushbu sayt uchun, yoki “bir xil manba” "
+"so'rovlar uchun."
+
+#: vnv/lib/python3.10/site-packages/django/views/csrf.py:148
+msgid "More information is available with DEBUG=True."
+msgstr "Qo'shimcha ma'lumotlarni DEBUG=True bilan olish mumkin."
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr "Yil ko'rsatilmagan"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:64
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:115
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr "Sana chegaradan tashqarida"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr "Oy ko'rsatilmagan"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr "Kun ko'rsatilmagan"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr "Hafta ko'rsatilmagan"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:349
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:380
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "Hech qanday %(verbose_name_plural)s mavjud emas"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:652
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+"Kelajakdagi %(verbose_name_plural)s mavjud emas, chunki %(class_name)s."
+"allow_future False."
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/dates.py:692
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "Yaroqsiz sana qatori “%(datestr)s” berilgan format “%(format)s”"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "So'rovga mos keladigan %(verbose_name)s topilmadi"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "Sahifa “oxirgi” emas, yoki butun son (int) ga o'zgartirilmaydi."
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "Yaroqsiz sahifa (%(page_number)s): %(message)s"
+
+#: vnv/lib/python3.10/site-packages/django/views/generic/list.py:169
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "Bo'sh ro'yxat va “%(class_name)s.allow_empty” False."
+
+#: vnv/lib/python3.10/site-packages/django/views/static.py:38
+msgid "Directory indexes are not allowed here."
+msgstr "Bu yerda katalog indekslariga ruxsat berilmaydi."
+
+#: vnv/lib/python3.10/site-packages/django/views/static.py:40
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” mavjud emas"
+
+#: vnv/lib/python3.10/site-packages/django/views/static.py:79
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "%(directory)s indeksi"
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:7
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:220
+msgid "The install worked successfully! Congratulations!"
+msgstr "O'rnatish muvaffaqiyatli bajarildi! Tabriklaymiz!"
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"Django %(version)s uchun <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/releases/\" target=\"_blank\" rel=\"noopener\">nashr qilish "
+"eslatmalarini</a> ko'ring"
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:221
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+"Siz ushbu sahifani ko'ryapsiz, chunki <a href=\"https://docs.djangoproject."
+"com/en/%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> sozlamalar faylingizda mavjud va siz URL-"
+"larni sozlamagan bo'lsangiz."
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:229
+msgid "Django Documentation"
+msgstr "Django Hujjatlari"
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:230
+msgid "Topics, references, &amp; how-to’s"
+msgstr "Mavzular, manbalar va qo'llanmalar"
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:238
+msgid "Tutorial: A Polling App"
+msgstr "Darslik: So'rovlar dasturi"
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:239
+msgid "Get started with Django"
+msgstr "Django bilan boshlang"
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:247
+msgid "Django Community"
+msgstr "Django Jamiyati"
+
+#: vnv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:248
+msgid "Connect, get help, or contribute"
+msgstr "Bog'laning, yordam oling yoki hissa qo'shing"
+
+#~ msgid "my orders"
+#~ msgstr "Mening buyurtmalarim"

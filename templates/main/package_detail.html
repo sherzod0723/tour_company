@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block body %}
+    <!-- Page Header Start !-->
+<div class="page-breadcrumb-area page-bg" style="background-image: url('images/breadcrumb/tour.jpg')">        <!-- <div class="page-overlay"></div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-wrapper">
+                        <div class="page-heading">
+                            <h3 class="page-title">{{ tour.title }}</h3>
+                        </div>
+                        <div class="breadcrumb-list">
+                            <ul>
+                                <li><a href="{% url 'main_home_view' %}">{% trans 'Home' %}</a></li>
+                                <li class="active"><a href="#">{% trans 'Tour detail' %}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End !-->
+
+    <!-- Tour Details Area Start -->
+    <div class="blog-area tour-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 blog-details-wrapper">
+                    <!-- Post Details Start -->
+                    <article class="single-post-item">
+                        <div class="post-title-wrapper">
+                            <h3 class="post-title">
+                                <a href="#">{{ tour.title }}</a>
+                            </h3>
+                            <div class="rating">
+                                <div class="ratting-inner">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>   
+                                    <span class="counter">3.5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-meta style-2">
+                                <div class="post-meta-inner">
+                                    <div class="date-info">
+                                       <i class="fa-solid fa-location-dot"></i>
+                                        <p class="date">{{ tour.country }}</p>
+                                    </div>
+                                    <div class="time-info">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <p class="time">{{ tour.duration }}</p>
+                                    </div>
+                                </div>
+                                <h5 class="price">{{ tour.calc_disc }} so'm</h5>
+                         </div>
+                        <div class="post-thumbnail">
+                           <a href="#">
+                              <img src="{{ tour.photo.url }}" alt="{{ tour.title }}" style="width: 1000px; height: 500px; object-fit: cover;">
+                          </a>
+                        </div>
+                        <div class="post-content-wrapper">
+                            <div class="post-content">
+                                <h4>{% trans 'About' %} {{ tour.country }}</h4>
+                                <p>{{ tour.overview }}</p>
+                                <div class="post-card-divider"></div>
+                                 <div class="list-item-wrapper">
+                                    <div class="single-item-list">
+                                        <h6>Price Includes</h6>
+                                        <ul>
+                                          {% for incl in object.include.all %}
+                                            <li>{{ incl.name }}</li>
+                                          {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <div class="single-item-list">
+                                        <h6>Price Excludes</h6>
+                                        <ul>
+                                          {% for excl in object.exclude.all %}
+                                            <li>{{ excl.name }}</li>
+                                          {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </article>
+
+                    <!-- Post Details End -->
+                </div>
+                <!-- Blog Sidebar Start -->
+                <div class="col-lg-4 order-1 order-lg-2">
+                    <div class="sidebar">
+                        <div class="widget widget_booking_form">
+                            <h3 class="title">{% trans 'Book this tour' %}</h3>
+                             <form action="#" method="post" class="comment-form">
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <button class="theme-btn" type="submit">
+                                            <span class="swip">
+                                                <span class="title-wrapper">
+                                                    <span class="title-1">{% trans 'Book now' %}</span>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Sidebar Start -->
+            </div>
+        </div>
+    </div>
+    <!-- Tour Details Area Start -->
+{% endblock body %}
